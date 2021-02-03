@@ -8,7 +8,8 @@ jobs:
     if: github.event_name == 'issues'
     runs-on: ubuntu-latest
     steps:
-      - with:
+      - uses: v2tu/Lab5_PartyHorn
+        with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
           GIPHY_KEY: ${{ secrets.GIPHY_KEY }}
