@@ -8,7 +8,8 @@ jobs:
     if: github.event_name == 'issues'
     runs-on: ubuntu-latest
     steps:
-      - uses: v2tu/Lab5_PartyHorn
+      - name: Add Gif Comment
+        uses: v2tu/Lab5_PartyHorn
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
